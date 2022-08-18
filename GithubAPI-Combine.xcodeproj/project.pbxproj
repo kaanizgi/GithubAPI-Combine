@@ -11,6 +11,10 @@
 		FF1C7B2928AE956000ADE241 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C7B2828AE956000ADE241 /* ContentView.swift */; };
 		FF1C7B2B28AE956300ADE241 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF1C7B2A28AE956300ADE241 /* Assets.xcassets */; };
 		FF1C7B2E28AE956300ADE241 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF1C7B2D28AE956300ADE241 /* Preview Assets.xcassets */; };
+		FF1C7B3928AE95CB00ADE241 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C7B3828AE95CB00ADE241 /* UserModel.swift */; };
+		FF1C7B3B28AE95E200ADE241 /* UserRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C7B3A28AE95E200ADE241 /* UserRow.swift */; };
+		FF1C7B3D28AE969700ADE241 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C7B3C28AE969700ADE241 /* WebService.swift */; };
+		FF1C7B3F28AE978300ADE241 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C7B3E28AE978300ADE241 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		FF1C7B2828AE956000ADE241 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FF1C7B2A28AE956300ADE241 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF1C7B2D28AE956300ADE241 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FF1C7B3828AE95CB00ADE241 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		FF1C7B3A28AE95E200ADE241 /* UserRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRow.swift; sourceTree = "<group>"; };
+		FF1C7B3C28AE969700ADE241 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		FF1C7B3E28AE978300ADE241 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,11 @@
 		FF1C7B2528AE956000ADE241 /* GithubAPI-Combine */ = {
 			isa = PBXGroup;
 			children = (
+				FF1C7B3728AE95C100ADE241 /* View */,
+				FF1C7B3628AE95BA00ADE241 /* Service */,
+				FF1C7B3528AE95B600ADE241 /* ViewModel */,
+				FF1C7B3428AE95B200ADE241 /* Model */,
 				FF1C7B2628AE956000ADE241 /* GithubAPI_CombineApp.swift */,
-				FF1C7B2828AE956000ADE241 /* ContentView.swift */,
 				FF1C7B2A28AE956300ADE241 /* Assets.xcassets */,
 				FF1C7B2C28AE956300ADE241 /* Preview Content */,
 			);
@@ -65,6 +76,39 @@
 				FF1C7B2D28AE956300ADE241 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FF1C7B3428AE95B200ADE241 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF1C7B3828AE95CB00ADE241 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF1C7B3528AE95B600ADE241 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF1C7B3E28AE978300ADE241 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF1C7B3628AE95BA00ADE241 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FF1C7B3C28AE969700ADE241 /* WebService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FF1C7B3728AE95C100ADE241 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF1C7B2828AE956000ADE241 /* ContentView.swift */,
+				FF1C7B3A28AE95E200ADE241 /* UserRow.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +182,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF1C7B2928AE956000ADE241 /* ContentView.swift in Sources */,
+				FF1C7B3928AE95CB00ADE241 /* UserModel.swift in Sources */,
 				FF1C7B2728AE956000ADE241 /* GithubAPI_CombineApp.swift in Sources */,
+				FF1C7B3D28AE969700ADE241 /* WebService.swift in Sources */,
+				FF1C7B3F28AE978300ADE241 /* ViewModel.swift in Sources */,
+				FF1C7B3B28AE95E200ADE241 /* UserRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

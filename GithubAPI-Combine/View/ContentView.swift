@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var vm = ViewModel()
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List {
+                ForEach(vm.users) { data in
+                    UserRow(user: data)
+                }
+            }.listStyle(.plain)
+            .navigationTitle("Github Users")
+        }
     }
 }
 
