@@ -10,21 +10,21 @@ import Combine
 
 class ViewModel:ObservableObject {
     
-    
+    let service:ApiServiceManager
     @Published var users = [User]()
+    @Published var isLoading = false
     private var cancellable:AnyCancellable?
-    
-    init() {
-        getUsers()
+   
+    init(service:ApiServiceManager) {
+        self.service = service
     }
     
-    
     func getUsers() {
-        
-        cancellable = APIService.shared.getUsers(url: APIService.baseUrl)
+        isLoading = true
+        cancellable = service.getUsers(url: APIService.baseUrl)
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { (completion) in
-                print(completion)
+                self.isLoading = false
             }, receiveValue: { userData in
                 self.users = userData
             })

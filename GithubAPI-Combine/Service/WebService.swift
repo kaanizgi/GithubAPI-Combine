@@ -8,9 +8,12 @@
 import Foundation
 import Combine
 
-class APIService {
+
+
+
+class APIService:ApiServiceManager {
     
-    static let shared = APIService()
+    
     static let baseUrl = URL(string: "https://api.github.com/users")!
     
     func getUsers(url:URL) -> AnyPublisher<[User],Error> {

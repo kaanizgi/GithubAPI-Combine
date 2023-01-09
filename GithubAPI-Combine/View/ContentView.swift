@@ -8,15 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var vm = ViewModel()
+    @StateObject private var vm = ViewModel(service: APIService())
     var body: some View {
         NavigationView {
-            List {
-                ForEach(vm.users) { data in
-                    UserRow(user: data)
-                }
-            }.listStyle(.plain)
-            .navigationTitle("Github Users")
+            if vm.isLoading {
+                ProgressView()
+            }else {
+                List {
+                    ForEach(vm.users) { data in
+                        UserRow(user: data)
+                    }
+                }.listStyle(.plain)
+                .navigationTitle("Github Users")
+            }
+        }.onAppear {
+            vm.getUsers()
         }
     }
 }
