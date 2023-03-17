@@ -9,19 +9,15 @@ import Foundation
 import Combine
 
 
-
-
 class APIService:ApiServiceManager {
     
-    
-    static let baseUrl = URL(string: "https://api.github.com/users")!
-    
-    func getUsers(url:URL) -> AnyPublisher<[User],Error> {
-        return URLSession.shared.dataTaskPublisher(for: url)
+    func getUsers(Endpoint:Endpoint) -> AnyPublisher<[User],Error> {
+        return URLSession.shared.dataTaskPublisher(for: Endpoint.url)
             .map(\.data)
             .decode(type: [User].self, decoder: JSONDecoder())
             .eraseToAnyPublisher()
     }
     
-    
 }
+
+

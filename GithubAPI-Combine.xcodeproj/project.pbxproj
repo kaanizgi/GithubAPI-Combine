@@ -13,8 +13,9 @@
 		FF1C7B2E28AE956300ADE241 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF1C7B2D28AE956300ADE241 /* Preview Assets.xcassets */; };
 		FF1C7B3928AE95CB00ADE241 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C7B3828AE95CB00ADE241 /* UserModel.swift */; };
 		FF1C7B3B28AE95E200ADE241 /* UserRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C7B3A28AE95E200ADE241 /* UserRow.swift */; };
-		FF1C7B3D28AE969700ADE241 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C7B3C28AE969700ADE241 /* WebService.swift */; };
+		FF1C7B3D28AE969700ADE241 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C7B3C28AE969700ADE241 /* ApiService.swift */; };
 		FF1C7B3F28AE978300ADE241 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C7B3E28AE978300ADE241 /* ViewModel.swift */; };
+		FF559B20296CA8AC000AA4FB /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF559B1F296CA8AC000AA4FB /* Endpoints.swift */; };
 		FF810B59296C7E9700A273FD /* ApiServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF810B58296C7E9700A273FD /* ApiServiceManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,8 +27,9 @@
 		FF1C7B2D28AE956300ADE241 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FF1C7B3828AE95CB00ADE241 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		FF1C7B3A28AE95E200ADE241 /* UserRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRow.swift; sourceTree = "<group>"; };
-		FF1C7B3C28AE969700ADE241 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		FF1C7B3C28AE969700ADE241 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		FF1C7B3E28AE978300ADE241 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		FF559B1F296CA8AC000AA4FB /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		FF810B58296C7E9700A273FD /* ApiServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,7 +102,8 @@
 		FF1C7B3628AE95BA00ADE241 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				FF1C7B3C28AE969700ADE241 /* WebService.swift */,
+				FF1C7B3C28AE969700ADE241 /* ApiService.swift */,
+				FF559B1F296CA8AC000AA4FB /* Endpoints.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -196,8 +199,9 @@
 				FF1C7B3928AE95CB00ADE241 /* UserModel.swift in Sources */,
 				FF1C7B2728AE956000ADE241 /* GithubAPI_CombineApp.swift in Sources */,
 				FF810B59296C7E9700A273FD /* ApiServiceManager.swift in Sources */,
-				FF1C7B3D28AE969700ADE241 /* WebService.swift in Sources */,
+				FF1C7B3D28AE969700ADE241 /* ApiService.swift in Sources */,
 				FF1C7B3F28AE978300ADE241 /* ViewModel.swift in Sources */,
+				FF559B20296CA8AC000AA4FB /* Endpoints.swift in Sources */,
 				FF1C7B3B28AE95E200ADE241 /* UserRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

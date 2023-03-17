@@ -10,6 +10,7 @@ import Combine
 
 
 protocol ApiServiceManager {
-    func getUsers(url:URL) -> AnyPublisher<[User],Error>
-    
+    func getUsers(Endpoint:Endpoint) -> AnyPublisher<[User],Error>
 }
+
+
